@@ -17,7 +17,11 @@ html {
 .container {
     max-width: 80%;
     margin: 0 auto;
+}
 
+body {
+    background-color: black;
+    color: white;
 
 }
 
@@ -35,84 +39,95 @@ html {
     width: calc(100% / 2);
 }
 
+
+
+/* HEADER */
+header {
+    background-color: #222222;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header button {
+    background-color: #4A4A4A;
+    color: white;
+    padding: 4px 8px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+
 /* MAIN */
 main {
-    height: calc(100vh - 80px);
+    height: calc(100vh - 130px);
     padding-top: 30px;
     overflow: auto;
 }
 
 main .my-row {
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .webcam-item {
     width: 300px;
     height: 200px;
-    margin: 20px 0;
+    margin: 20px;
 
 }
 
 /* FOOTER */
 
 footer {
-    color: white;
-    background-color: #222222;
-    padding: 0 30px;
-}
 
-footer .my-row {
     height: 80px;
-}
-
-footer .my-row>*,
-footer .my-row .icon-container {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    background-color: #222222;
 }
 
-.footer-left .icon-container,
-.footer-middle .icon-container {
-    flex-flow: column;
+footer>* {
+    display: flex;
 }
 
-
-.icon-box {
-    padding: 5px 15px;
-
+footer>*>button {
+    height: 100%;
+    margin-right: 4px;
+    border: none;
+    background: none;
+    color: white;
+    padding: 5px;
 }
 
-.icon-box.big-icon {
-    font-size: 2.5rem;
+footer>*>button>div:first-child {
+    margin-bottom: 5px;
 }
 
-footer .my-row .footer-middle {
-    justify-content: space-around;
-}
-
-.btn-green {
+.green-btn {
     color: green;
 }
 
-.btn-red {
+.end-meeting-btn {
+    background-color: #4A4A4A;
     color: red;
-}
-
-footer .my-row .footer-right {
-    justify-content: flex-end;
+    padding: 10px;
+    margin-right: 0;
 }
 
 /* DEBUG */
 .debug .container {
     background-color: goldenrod;
-
 }
 
-.debug main {
+
+
+/* .debug main {
     background-color: lightcyan;
 
 
-}
+} */
 
 .debug main .webcam-item {
     background-color: royalblue;
